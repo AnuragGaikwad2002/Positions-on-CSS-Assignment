@@ -1,0 +1,41 @@
+<!-- The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            padding: 7px;
+        }
+
+        .box1 {
+            background-color: yellow;
+        }
+
+        .box2 {
+            background-color: red;
+            z-index: 1;
+            left: 65px;
+            top: 65px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+    </div>
+</body>
+</html>
